@@ -105,7 +105,7 @@ public class Board(int winPieces)
     {
         Row = row;
         Col = col;
-        LatticeLife = latticeLife;//ToDo:实现具体规则
+        LatticeLife = latticeLife;
         for (int r = 0; r < row; r++)
         {
             for (int c = 0; c < col; c++)
