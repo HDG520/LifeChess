@@ -6,7 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 
-namespace WpfApp1;
+namespace LifeChess;
 
 public sealed class LatticeData : INotifyPropertyChanged
 {

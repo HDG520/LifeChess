@@ -6,10 +6,31 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UseWPF>true</UseWPF>
+        <AssemblyName>LifeChess</AssemblyName>
+        <RootNamespace>LifeChess</RootNamespace>
+        <PackageId>LifeChess</PackageId>
+        <Title>LifeChess - 生命棋</Title>
+        <Authors>HDG</Authors>
+        <Description>一个连棋游戏，但棋子存在生命周期</Description>
+        <Copyright>HDG</Copyright>
+        <Company>HDG</Company>
+        <Product>LifeChess</Product>
+        <PackageIcon>icon.ico</PackageIcon>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <Optimize>true</Optimize>
+      <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DebugType>embedded</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
       <None Remove="gameData.json" />
+      <None Remove="icon.png" />
+      <None Remove="icon.ico" />
     </ItemGroup>
 
 </Project>

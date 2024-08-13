@@ -1,4 +1,4 @@
-﻿namespace WpfApp1;
+﻿namespace LifeChess;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
@@ -8,7 +8,8 @@ public partial class MainWindow
     public MainWindow()
     {
         InitializeComponent();
-        DataContext = new Board(3, 3, 3, 3);
+        int i = 3;
+        DataContext = new Board(i,i,i,i);
     }
 
     private void BoardControl_OnOnWinning(object sender, WinningArgs args)

@@ -1,16 +1,14 @@
-﻿<Window x:Class="WpfApp1.MainWindow"
+﻿<Window x:Class="LifeChess.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:wpfApp1="clr-namespace:WpfApp1"
+        xmlns:lifeChess="clr-namespace:LifeChess"
         mc:Ignorable="d"
         Title="生命棋"
         SizeToContent="WidthAndHeight"
-        d:DataContext="{d:DesignInstance wpfApp1:Board}">
+        d:DataContext="{d:DesignInstance lifeChess:Board}">
     <Grid Margin="10">
-        <wpfApp1:BoardControl x:Name="BoardControl"
-                              Board="{Binding}" HorizontalAlignment="Center"
-                              OnWinning="BoardControl_OnOnWinning"/>
+        <lifeChess:BoardControl x:Name="BoardControl" Board="{Binding}" HorizontalAlignment="Center" OnWinning="BoardControl_OnOnWinning"/>
     </Grid>
 </Window>
